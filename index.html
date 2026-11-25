@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padmakar Pulikollu | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Padmakar Pulikollu, an aspiring Data Analyst skilled in SQL, Power BI, Tableau, Python, and Excel.">
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 for Clean Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Gradient Orbs -->
+    <div class="gradient-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- NAVIGATION BAR                                                        -->
+    <!-- ===================================================================== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <div class="shadow-icon brand-badge">PP</div>
+                <div class="brand-text">
+                    <span class="brand-name">Padmakar Pulikollu</span>
+                    <span class="brand-role">DATA ANALYST</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Dark / Light Theme Toggle Button -->
+                <button class="theme-toggle shadow-icon" id="theme-toggle" aria-label="Toggle Dark or Light Theme" title="Switch Theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="mobile-toggle shadow-icon" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- 1. HERO SECTION                                                       -->
+    <!-- ===================================================================== -->
+    <section id="home" class="hero section">
+        <div class="container hero-grid">
+            
+            <!-- Left Column: Animated Blur Text & CTA -->
+            <div class="hero-content">
+                <h1 class="hero-title blur-reveal" style="--delay: 0.1s;">
+                    Hi, I'm <span class="text-gradient">Padmakar Pulikollu</span>
+                </h1>
+
+                <p class="hero-subtitle blur-reveal" style="--delay: 0.2s;">
+                    Aspiring Data Analyst &bull; SQL &bull; Power BI &bull; Tableau &bull; Python &bull; Excel
+                </p>
+
+                <p class="hero-description blur-reveal" style="--delay: 0.3s;">
+                    I am passionate about transforming raw data into meaningful insights through data analysis, visualization, and interactive dashboards.
+                </p>
+
+                <!-- Primary Action Buttons -->
+                <div class="hero-actions blur-reveal" style="--delay: 0.4s;">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-chart-line"></i></span>
+                        <span>View My Projects</span>
+                    </a>
+
+                    <!-- Opens Google Drive Resume Preview in a New Tab -->
+                    <a href="https://drive.google.com/file/d/193-3uiaP2agxacQtMeaecSLBf6rvRB0q/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                        <span class="shadow-icon shadow-icon-sm"><i class="fa-regular fa-file-pdf"></i></span>
+                        <span>View Resume</span>
+                    </a>
+
+                    <!-- Direct Download Link for Google Drive Resume -->
+                    <a href="https://drive.google.com/uc?export=download&id=193-3uiaP2agxacQtMeaecSLBf6rvRB0q" target="_blank" rel="noopener noreferrer" class="btn btn-glass" download="Padmakar_Pulikollu_Resume.pdf">
+                        <span class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-download"></i></span>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Designer Portrait Frame (Google Drive Photo) -->
+            <div class="hero-visual blur-reveal" style="--delay: 0.25s;">
+                <div class="profile-glass-frame glass-panel">
+                    <div class="profile-image-wrapper">
+                        <img 
+                            src="https://lh3.googleusercontent.com/d/1kqHjsIMhrNYqkXBDuoI9QLqDZoXbXC6t" 
+                            onerror="this.onerror=null; this.src='Padmakat.jpg';" 
+                            alt="Padmakar Pulikollu - Aspiring Data Analyst" 
+                            class="profile-photo">
+                        <div class="photo-gradient-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 2. ABOUT ME SECTION                                                   -->
+    <!-- ===================================================================== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-single">
+                <div class="glass-panel about-card scroll-blur">
+                    <div class="card-header-row">
+                        <div class="shadow-icon"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>Professional Summary</h3>
+                    </div>
+                    <p class="body-text">
+                        I am an aspiring Data Analyst with knowledge of <strong>SQL</strong>, <strong>Excel</strong>, <strong>Power BI</strong>, <strong>Tableau</strong>, and <strong>Python</strong>. I have skills in data cleaning, analysis, visualization, and dashboard development.
+                    </p>
+                    <p class="body-text">
+                        I have worked on data analytics projects to identify trends and generate actionable insights. I possess strong analytical and problem-solving skills and am seeking an entry-level opportunity to apply my technical skills and contribute to data-driven decision-making.
+                    </p>
+
+                    <div class="pillars-grid">
+                        <div class="pillar-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-broom"></i></div>
+                            <span>Data Cleaning</span>
+                        </div>
+                        <div class="pillar-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <span>Trend Analysis</span>
+                        </div>
+                        <div class="pillar-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-gauge-high"></i></div>
+                            <span>BI Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 3. TECHNICAL SKILLS SECTION                                           -->
+    <!-- ===================================================================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                
+                <!-- Analytics & Business Intelligence -->
+                <div class="glass-panel skill-card scroll-blur">
+                    <div class="card-header-row">
+                        <div class="shadow-icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <div>
+                            <h3>Analytics &amp; Business Intelligence</h3>
+                            <p class="card-sub">Visualization, Dashboards &amp; Reporting</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="skill-pill"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+                        <span class="skill-pill"><i class="fa-solid fa-chart-simple"></i> Power BI</span>
+                        <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Tableau</span>
+                        <span class="skill-pill"><i class="fa-solid fa-eye"></i> Data Visualization</span>
+                        <span class="skill-pill"><i class="fa-solid fa-file-lines"></i> Reporting</span>
+                        <span class="skill-pill"><i class="fa-solid fa-filter"></i> Data Cleaning</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Libraries -->
+                <div class="glass-panel skill-card scroll-blur">
+                    <div class="card-header-row">
+                        <div class="shadow-icon"><i class="fa-brands fa-python"></i></div>
+                        <div>
+                            <h3>Programming &amp; Libraries</h3>
+                            <p class="card-sub">Data Manipulation &amp; Statistical Plotting</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="skill-pill"><i class="fa-solid fa-code"></i> Python</span>
+                        <span class="skill-pill"><i class="fa-solid fa-table"></i> Pandas</span>
+                        <span class="skill-pill"><i class="fa-solid fa-calculator"></i> NumPy</span>
+                        <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+                        <span class="skill-pill"><i class="fa-solid fa-chart-area"></i> Seaborn</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="glass-panel skill-card scroll-blur">
+                    <div class="card-header-row">
+                        <div class="shadow-icon"><i class="fa-solid fa-database"></i></div>
+                        <div>
+                            <h3>Database</h3>
+                            <p class="card-sub">Relational Querying &amp; Retrieval</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="skill-pill"><i class="fa-solid fa-server"></i> MySQL</span>
+                        <span class="skill-pill"><i class="fa-solid fa-download"></i> Data Extraction</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="glass-panel skill-card scroll-blur">
+                    <div class="card-header-row">
+                        <div class="shadow-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <div>
+                            <h3>Tools &amp; Platforms</h3>
+                            <p class="card-sub">Productivity, Notebooks &amp; Reporting Suites</p>
+                        </div>
+                    </div>
+                    <div class="tag-cloud">
+                        <span class="skill-pill"><i class="fa-brands fa-microsoft"></i> MS Office</span>
+                        <span class="skill-pill"><i class="fa-solid fa-laptop-code"></i> Google Colab</span>
+                        <span class="skill-pill"><i class="fa-solid fa-folder-tree"></i> MIS</span>
+                        <span class="skill-pill"><i class="fa-solid fa-magnifying-glass-chart"></i> Looker Studio</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 4. MY PROJECTS SECTION                                                -->
+    <!-- ===================================================================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">My Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: Zomato Restaurant Data Analysis -->
+                <article class="glass-panel project-card scroll-blur">
+                    <div class="project-preview glass-subpanel">
+                        <div class="shadow-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <p class="preview-title">Zomato Analytics Dashboard</p>
+                        <p class="preview-sub">Power BI &bull; Tableau &bull; SQL &bull; Python</p>
+                        <span class="preview-badge">9,500+ Records</span>
+                    </div>
+
+                    <div class="project-body">
+                        <span class="project-category">FEATURED ANALYTICS PROJECT</span>
+                        <h3 class="project-title">Zomato Restaurant Data Analysis</h3>
+                        <p class="body-text">
+                            Analyzed more than 9,500 restaurant records to evaluate cuisine popularity, pricing patterns, and customer ratings.
+                        </p>
+
+                        <div class="project-tools">
+                            <span class="tool-tag">Power BI</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Excel</span>
+                            <span class="tool-tag">Tableau</span>
+                        </div>
+
+                        <ul class="project-points">
+                            <li><i class="fa-solid fa-arrow-right"></i> Analyzed restaurant data to identify cuisine trends and pricing patterns.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Performed data cleaning and transformation using SQL and Excel.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Developed Power BI and Tableau dashboards.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Visualized restaurant performance and market trends.</li>
+                        </ul>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Padmakar31/Zomato_Restaurant_Analysis_Dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                <span class="shadow-icon shadow-icon-xs"><i class="fa-brands fa-github"></i></span>
+                                <span>View Project on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Healthcare Disease & Treatment Analysis Dashboard -->
+                <article class="glass-panel project-card scroll-blur">
+                    <div class="project-preview glass-subpanel">
+                        <div class="shadow-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <p class="preview-title">Healthcare Treatment Dashboard</p>
+                        <p class="preview-sub">SQL &bull; Python &bull; Power BI &bull; Excel</p>
+                        <span class="preview-badge">Healthcare BI</span>
+                    </div>
+
+                    <div class="project-body">
+                        <span class="project-category">FEATURED BI PROJECT</span>
+                        <h3 class="project-title">Healthcare Disease &amp; Treatment Analysis Dashboard</h3>
+                        <p class="body-text">
+                            Analyzed healthcare data to identify disease and treatment patterns and developed an interactive dashboard.
+                        </p>
+
+                        <div class="project-tools">
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Python (Pandas, NumPy)</span>
+                            <span class="tool-tag">Power BI</span>
+                            <span class="tool-tag">Excel</span>
+                        </div>
+
+                        <ul class="project-points">
+                            <li><i class="fa-solid fa-arrow-right"></i> Analyzed healthcare data using SQL and Python.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Cleaned and transformed datasets for analysis and reporting.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Developed an interactive Power BI dashboard.</li>
+                            <li><i class="fa-solid fa-arrow-right"></i> Created charts and insights to support better decision-making.</li>
+                        </ul>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/Padmakar31/Healthcare_Disease_Treatment_Analysis_Dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                <span class="shadow-icon shadow-icon-xs"><i class="fa-brands fa-github"></i></span>
+                                <span>View Project on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 5. EDUCATION SECTION                                                  -->
+    <!-- ===================================================================== -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline">
+                
+                <!-- B.Tech -->
+                <div class="timeline-item scroll-blur">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> August 2023 – April 2026</span>
+                            <span class="timeline-score">Percentage: <strong>75%</strong></span>
+                        </div>
+                        <h3>B.Tech – Computer Science Engineering</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-graduation-cap"></i> Sree Venkateswara Engineering College of Nellore</p>
+                    </div>
+                </div>
+
+                <!-- Diploma -->
+                <div class="timeline-item scroll-blur">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> September 2020 – April 2023</span>
+                            <span class="timeline-score">Percentage: <strong>72%</strong></span>
+                        </div>
+                        <h3>Diploma – Automobile Engineering</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-building-columns"></i> Government Polytechnic College, Atmakur</p>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="timeline-item scroll-blur">
+                    <div class="timeline-dot"></div>
+                    <div class="glass-panel timeline-card">
+                        <div class="timeline-top">
+                            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2019 – April 2020</span>
+                            <span class="timeline-score">Percentage: <strong>80%</strong></span>
+                        </div>
+                        <h3>Secondary School Certificate</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-school"></i> Z.P.P. High School, Chilakapadu</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 6. CERTIFICATIONS & ACHIEVEMENTS SECTION                              -->
+    <!-- ===================================================================== -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">Certifications &amp; Achievements</h2>
+            </div>
+
+            <div class="cert-grid">
+                
+                <!-- 1. DataQuest 2.0 -->
+                <div class="glass-panel cert-card scroll-blur">
+                    <div class="cert-top">
+                        <div class="shadow-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <span class="cert-date">March 2025</span>
+                    </div>
+                    <h3>DataQuest 2.0 – VIT Chennai</h3>
+                    <span class="cert-tag">36-Hours Hackathon</span>
+                    <p class="body-text">Built a plastic recycling web application using YOLOv8.</p>
+                </div>
+
+                <!-- 2. NPTEL -->
+                <div class="glass-panel cert-card scroll-blur">
+                    <div class="cert-top">
+                        <div class="shadow-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <span class="cert-date">February–May 2025</span>
+                    </div>
+                    <h3>NPTEL – Cloud Computing</h3>
+                    <span class="cert-tag">Certification Course</span>
+                    <p class="body-text">Completed the Cloud Computing certification.</p>
+                </div>
+
+                <!-- 3. GeeksforGeeks -->
+                <div class="glass-panel cert-card scroll-blur">
+                    <div class="cert-top">
+                        <div class="shadow-icon"><i class="fa-brands fa-python"></i></div>
+                        <span class="cert-date">Certificate</span>
+                    </div>
+                    <h3>GeeksforGeeks – Programming in Python</h3>
+                    <span class="cert-tag">Python Programming</span>
+                </div>
+
+                <!-- 4. Cisco -->
+                <div class="glass-panel cert-card scroll-blur">
+                    <div class="cert-top">
+                        <div class="shadow-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="cert-date">Certificate</span>
+                    </div>
+                    <h3>Cisco – Data Analytics Certificate</h3>
+                    <span class="cert-tag">Data Analytics</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 7. CONTACT SECTION                                                    -->
+    <!-- ===================================================================== -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header scroll-blur">
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+
+            <div class="contact-single-wrapper">
+                <div class="glass-panel contact-info-card scroll-blur">
+                    <div class="contact-card-header">
+                        <h3>Contact Information</h3>
+                        <p class="body-text">Open to entry-level Data Analyst and Business Intelligence opportunities.</p>
+                    </div>
+
+                    <div class="contact-items-grid">
+                        <!-- Name -->
+                        <div class="contact-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-user"></i></div>
+                            <div>
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Padmakar Pulikollu</span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <a href="mailto:pulikollupadmakar2005@gmail.com" class="contact-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value link-hover">pulikollupadmakar2005@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:9390405905" class="contact-item glass-subpanel">
+                            <div class="shadow-icon shadow-icon-sm"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value link-hover">9390405905</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Social Profiles -->
+                    <div class="contact-actions-bar">
+                        <div class="social-row">
+                            <a href="https://www.linkedin.com/in/padmakar-pulikollu-112232377" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                                <span class="shadow-icon shadow-icon-xs"><i class="fa-brands fa-linkedin-in"></i></span>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Padmakar31" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                                <span class="shadow-icon shadow-icon-xs"><i class="fa-brands fa-github"></i></span>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FOOTER                                                                -->
+    <!-- ===================================================================== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <p class="footer-name">Padmakar Pulikollu</p>
+                <p class="footer-sub">Aspiring Data Analyst | SQL &bull; Power BI &bull; Tableau &bull; Python &bull; Excel</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/padmakar-pulikollu-112232377" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Padmakar31" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:pulikollupadmakar2005@gmail.com">Email</a>
+                <a href="#home">Top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
